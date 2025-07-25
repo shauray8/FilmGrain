@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "FilmGrain"
+version = "0.0.1"
+description = "Lightweight video enhancement tools from github.com/vrgamegirl19: grain, sharpen, color match"
+authors = [{ name = "Shauray Singh", email = "shauray9@gmail.com" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "torch",
+    "kornia",
+]
+
+[tool.setuptools.packages]
+find = { where = ["."] }
